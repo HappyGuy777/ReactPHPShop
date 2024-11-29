@@ -1,0 +1,99 @@
+/* profile.css */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 10px;
+    
+}
+
+.profile-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    width: 50vh;
+}
+
+.profile-image {
+    margin-right: 20px;
+}
+
+.profile-image img {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    border-radius: 50%;
+}
+/* profile.css */
+
+.profile-info button {
+    padding: 10px 20px;
+    background-color: #f44336; /* Red color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.profile-info button:hover {
+    background-color: #d32f2f; /* Darker red color on hover */
+}
+
+
+.profile-info {
+    text-align: center;
+}
+
+.profile-info h2 {
+    margin: 5px 0;
+}
+
+.user-details {
+    margin-bottom: 20px;
+}
+
+.user-details h2 {
+    margin-bottom: 10px;
+}
+
+.details-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.details-list p {
+    margin: 5px 0;
+}
+
+.profile-actions {
+    margin-bottom: 20px;
+}
+
+.profile-actions h2 {
+    margin-bottom: 10px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.action-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #0008C1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.action-buttons button:hover {
+    background-color: #0008e7;
+}
+
+

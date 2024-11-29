@@ -1,0 +1,306 @@
+/* modal.css */
+.modal {
+  display: none;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 300px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal::-webkit-scrollbar {
+  background: #b6b6b6;
+  width: 5px;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background: #b6b6b6;
+  border-radius: 3px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 800;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+/* Remaining styles remain unchanged */
+
+
+.modal-button {
+  background-color: #0008C1;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  width: 100%;
+  margin-top: 10px;
+  /* Adjust margin as needed */
+}
+
+.modal-content button:hover {
+  background-color: #0008e7;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content input[type="password"],
+.modal-content input[type="date"],
+.modal-content input[type="number"],
+.modal-content input[type="file"] {
+  width: calc(100% - 22px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+  margin-top: 10px;
+  /* Adjust margin as needed */
+}
+
+.modal-content input[type="file"] {
+  display: none;
+}
+
+.modal-content input:focus {
+  border-color: #4caf50;
+}
+
+.image-upload {
+  margin-bottom: 20px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* Display items in a column layout */
+}
+
+.file-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+  /* Adjust width as needed */
+  border: 1px dashed #ccc;
+  cursor: pointer;
+  position: relative;
+  background: #D3D3D3;
+  transition: 0.3s;
+  height: 150px;
+  width: 260px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.5px;
+  text-align: center;
+
+}
+
+.file-container img {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  object-fit: contain;
+  top: 0;
+}
+
+.file-container:hover {
+  background-color: #bdbcbc;
+}
+
+.file-container:hover svg {
+  color: #bdbcbc;
+}
+
+.file-container:active {
+  background-color: #a8a8a8;
+}
+
+.selected-images {
+  margin-top: 10px;
+  /* Adjust margin as needed */
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.selected-images ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.selected-images ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  /* Adjust margin as needed */
+}
+
+.selected-images ul li img {
+  width: 150px;
+  /* Adjust image width as needed */
+  height: auto;
+  /* Maintain aspect ratio */
+  margin-right: 10px;
+  /* Adjust margin as needed */
+}
+
+.clear-button {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.clear-button button {
+  background-color: #f44336;
+  color: white;
+  width: auto;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.clear-button button:hover {
+  background-color: #d32f2f;
+}
+
+/* modal.css */
+/* Add this CSS at the end of your modal.css file */
+
+.image-item {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  /* Adjust margin between images */
+}
+
+.delete-button {
+  font-size: 16px;
+  transition: background-color 0.3s;
+
+  position: absolute;
+  top: 5px;
+  /* Adjust vertical position */
+  right: 15px;
+  /* Adjust horizontal position */
+  width: 20px;
+  /* Adjust button width */
+  height: 20px;
+  /* Adjust button height */
+  border: none;
+  border-radius: 50%;
+  /* Make button round */
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  background-color: #4caf50;
+  color: white;
+
+}
+
+.product-gender-buttons {
+  height: 55px;
+  display: flex;
+  align-items: center;
+
+}
+
+.product-gender-buttons div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+
+}
+
+.product-gender-buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.delete-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Set button background color on hover */
+}
+
+.category-dropdown {
+  position: relative;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category-dropdown li {
+  display: flex;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+  width: 90%;
+}
+
+.category-dropdown li:hover {
+  font-weight: 500;
+  border-bottom: 1px solid #272727;
+}
+
+/* .a123{
+  border: 1px solid;
+  height: 10px;
+  display: flex;
+} */

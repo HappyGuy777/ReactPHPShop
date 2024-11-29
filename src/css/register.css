@@ -1,0 +1,108 @@
+/* register.css */
+.body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Make content stack vertically */
+  align-items: center;
+  justify-content: center;
+}
+
+.registration-form {
+  width: 30%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center form contents */
+  margin-bottom: 20px;
+}
+
+.registration-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.registration-form div {
+  margin-bottom: 20px;
+}
+
+.registration-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+.registration-form input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.registration-form input:focus {
+  border-color: #4caf50;
+}
+
+.registration-form .gender_box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.registration-form .gender_box label {
+  margin-left: 5px;
+}
+
+.registration-form p {
+  color: red;
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+.registration-form button {
+  background-color: #0008C1;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.registration-form button:hover {
+  background-color: #0008e7;
+}
+
+.linkBox {
+  width: 30%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center button */
+  margin-bottom: 18px;
+}
+
+.linkBox button {
+  background-color: #0008C1;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.linkBox button:hover {
+  background-color: #0008e7;
+}

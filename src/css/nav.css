@@ -1,0 +1,239 @@
+/* Navbar styles */
+nav {
+    background-color: #FFFFFF;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure navbar appears above other content */
+}
+
+.site-name {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
+.nav-list li {
+    display: flex;
+    margin: 0 10px; /* Add margin for spacing */
+}
+
+/* Link styles */
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #d9a917;
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+.sub-link {
+    color: #0008C1;
+    font-size: 18px;
+}
+.sub-link svg {
+    width: 32px; 
+    height: 32px; 
+    fill: #000; 
+    transition: fill 0.3s, width 0.3s, height 0.3s; 
+}
+
+.sub-link svg:hover {
+    fill: #0008C1; 
+
+}
+.icon-link{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.link:hover {
+    background-color: #E6E6E6;
+    color: #f5bd1c;
+    border-radius: 5px;
+}
+.icon-link:hover{
+    border-radius: 50%;
+}
+/* Add padding to create initial indentation */
+body {
+    padding-top: 70px;
+    background: #E6E6E6;
+}
+
+.svg-search {
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+    transition: fill 0.3s;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    min-height: 40px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    padding: 5px;
+    transition: background-color 0.3s, border 0.3s  ;
+    border: 1px solid transparent;
+}
+
+.search-bar {
+    outline: none;
+    border: none;
+    padding: 5px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: transparent;
+    flex-grow: 1;
+}
+
+
+.search-bar::placeholder {
+    color: #999;
+}
+
+.search-box:hover {
+    background-color: #e0e0e0;
+}
+
+
+.search-bar:focus {
+    background-color: #fff;
+}
+
+.search-bar:focus + .svg-search {
+    fill: #0008C1;
+}
+
+.search-bar:focus {
+    border: none;
+}
+
+.search-bar:focus-visible {
+    outline: none;
+}
+.svg-search{
+    fill: #FFFFFF;
+}
+.search-label{
+    width: 32px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    height: 32px;
+    margin: 0 5px;
+    background-color: #0008C1;
+}
+.search-box:focus-within {
+    border: 1px solid #0008C1;
+}
+
+.search-box:focus-within .svg-search {
+    fill: #d9a917;
+}
+.search-results-container {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    width: 90%;
+    max-height: 300px; /* Set a maximum height */
+    overflow-y: auto; /* Add vertical scrollbar when exceeding max height */
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    border-radius: 5px;
+    z-index:900; /* Ensure it appears above other elements */
+    padding: 10px;
+}
+
+/* Search results list */
+.search-results-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Add margin to remove default list margin */
+}
+
+/* Search result item */
+.search-results-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Add border between items */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+/* Hover effect for search result item */
+.search-results-list li:hover {
+    background-color: #f5f5f5; /* Lighter background color on hover */
+    cursor: pointer;
+}
+
+/* Style for links inside search results */
+.search-results-container p {
+    position: relative; /* Ensure positioning context for pseudo-element */
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s; /* Smooth color transition */
+    margin-top: 10px; /* Add top margin to links */
+}
+.search-results-container p:hover {
+   cursor: pointer;
+}
+
+.search-results-container p::before {
+    content: ''; /* Required for pseudo-element */
+    position: absolute;
+    bottom: -2px; /* Adjust as needed */
+    left: 0;
+    width: 0; /* Initially invisible */
+    height: 2px; /* Height of the underline */
+    background-color: #0008C1; /* Color of the underline */
+    transition: width 0.3s; /* Animate width */
+}
+
+.search-results-container p:hover::before {
+    width: 100%; /* Expand width on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .site-name {
+        font-size: 24px;
+    }
+
+    .link {
+        font-size: 24px;
+    }
+
+    .sub-link {
+        font-size: 16px;
+    }
+
+    ul {
+        justify-content: center; /* Center items for smaller screens */
+    }
+
+    li {
+        margin: 5px; /* Adjust margins for smaller screens */
+    }
+}

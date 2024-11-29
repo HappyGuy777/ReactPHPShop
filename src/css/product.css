@@ -1,0 +1,109 @@
+/* product.css */
+
+.product-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-header {
+    width: 95%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.big-avatar{
+    width: 50px;
+    height: 50px;
+}
+.upper{
+    position: relative;
+    top: 0;
+}
+.mySwiper {
+    width: 100%;
+    height: 100%; /* Adjust height as needed */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+    background: #000;
+}
+.product-buttons{
+ display: flex;
+ justify-content: center;
+}
+.product-info {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.description-box{
+    display: flex;
+    word-break: break-word;
+    min-height: 150px;
+    max-height: 300px   ;
+    flex-direction: column;
+    padding: 10px;
+}
+.product-info button {
+    background-color: #0008C1;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    margin: 5px;
+    width: 200px;
+    height: 55px;
+}
+.product-info .banned {
+    background-color: rgb(207, 1, 1);
+    color: #fff;
+   
+}
+
+.details-list {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-actions {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Add more CSS rules as needed */

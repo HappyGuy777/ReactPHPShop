@@ -1,0 +1,181 @@
+
+/*for to login and to register*/
+.linkBox{
+    width: 30%;
+    padding: 20px;
+    height: 60%;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+}
+
+.error-page{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.error-page h1{
+  font-size: 40px;
+  font-weight: bold;
+}
+.linkBox button {
+     background-color: #4caf50;
+     color: white;
+     padding: 12px 20px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     font-size: 16px;
+     transition: background-color 0.3s;
+ }
+
+.linkBox button:hover {
+    background-color: #45a049;
+}
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    min-height: 50vh;
+    gap: 20px 10px;
+    padding: 10px;
+  }
+
+.product-card {
+    width: 25%;
+    min-height: 420px;
+    height: auto;
+    min-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.product_title {
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
+}
+.product_title:hover{
+    cursor: pointer;
+  
+}
+.product-images {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.product-images img {
+    width: 90%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    height: 300px;
+}
+
+
+.btn_box button {
+    background-color: #0008C1;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    margin: 5px;
+}
+.btn_box{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.icon{
+   height: 20px;
+   width: 20px;
+}
+.product_list{
+    min-height:150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.product_list p{
+    font-family:math;
+    font-size: 16px;
+}
+.product-card button:hover {
+    background-color: #0056b3;
+}
+ul{
+    list-style: none;
+}
+.full{
+    width: 100%;
+}
+.full img{
+    width: 100%;
+}
+.title_box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom:1px solid gainsboro;
+    margin: 10px;
+}
+.company-avatar {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    margin-right: 10px; 
+  }
+  .company-avatar:hover {
+   cursor: pointer;
+  }
+  .pagination {
+    display: flex;
+    list-style: none;
+    margin: 5px;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  .page-item {
+    margin: 0 5px;
+  }
+  
+  .page-link {
+    display: block;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .page-link:hover,
+  .page-link:focus {
+    background-color: #007bff;
+  }
+
+  .page-item.active .page-link {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
